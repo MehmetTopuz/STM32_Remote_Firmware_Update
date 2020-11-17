@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+".\iap\startup_stm32f103xb.o"
+".\iap\stm32f1xx_hal.o"
+".\iap\stm32f1xx_hal_cortex.o"
+".\iap\stm32f1xx_hal_rcc.o"
+".\iap\stm32f1xx_hal_pwr.o"
+".\iap\stm32f1xx_hal_dma.o"
+".\iap\stm32f1xx_hal_gpio.o"
+".\iap\stm32f1xx_hal_tim_ex.o"
+".\iap\stm32f1xx_hal_flash.o"
+".\iap\stm32f1xx_hal_flash_ex.o"
+".\iap\stm32f1xx_hal_uart.o"
+".\iap\stm32f1xx_hal_rcc_ex.o"
+".\iap\stm32f1xx_hal_tim.o"
+".\iap\stm32f1xx_hal_gpio_ex.o"
+".\iap\stm32f1xx_hal_crc.o"
+".\iap\system_stm32f1xx.o"
+".\iap\stm32f1xx_hal_msp.o"
+".\iap\main.o"
+".\iap\stm32f1xx_it.o"
+".\iap\iap.o"
+--library_type=microlib --strict --scatter ".\IAP\IAP.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "IAP.map" -o .\IAP\IAP.axf
